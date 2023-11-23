@@ -129,7 +129,7 @@ async def bluez_agent(bus: MessageBus, callbacks: BaseBleakAgentCallbacks):
 
     # REVISIT: implement passing capability if needed
     # "DisplayOnly", "DisplayYesNo", "KeyboardOnly", "NoInputNoOutput", "KeyboardDisplay"
-    capability = ""
+    capability = "NoInputNoOutput"
 
     # this should be a unique path to allow multiple python interpreters
     # running bleak and multiple agents at the same time
